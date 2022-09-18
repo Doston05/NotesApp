@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/my_drawer_layout"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#BF000000"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/no_item_back"
+            android:layout_width="300dp"
+            android:layout_centerInParent="true"
+            android:layout_height="300dp"
+            android:src="@drawable/cuate"
+            android:visibility="invisible" />
+        <ImageView
+            android:id="@+id/first_note"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rafiki"/>
+        <TextView
+            android:id="@+id/create_first_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your first note !"
+            android:fontFamily="@font/roboto_black"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:layout_below="@id/first_note"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/file_not_fount_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File not found. Try searching again."
+            android:fontFamily="@font/roboto_black"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:layout_below="@id/no_item_back"
+            android:gravity="center_horizontal"
+            android:textSize="22sp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="48dp"
+            android:src="@drawable/add_24"
+            app:tint="@color/white"
+            app:rippleColor="#FFC400"
+            android:backgroundTint="#FFC400"
+            android:layout_alignParentBottom="true"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/note_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center_vertical"
+                    android:text="Your Notes"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:layout_below="@id/note_titles"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                    tools:listitem="@layout/note_rv_row_items" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:id="@+id/navView"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        android:backgroundTint="#4A4A4A"
+        app:menu="@menu/nav_drawer_menu"
+        app:itemTextColor="@color/drawer_item"
+        app:itemIconTint="@android:color/transparent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

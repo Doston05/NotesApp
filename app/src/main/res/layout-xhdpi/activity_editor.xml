@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/editor_background"
+    android:layout_height="match_parent"
+    android:background="#81D4FA"
+    android:paddingHorizontal="8dp"
+    android:orientation="vertical"
+    tools:context=".activities.EditorActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/background_layout"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/title_back"
+                    android:visibility="visible"
+                    android:layout_marginTop="16dp"
+                    android:padding="6dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_1"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/color1" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_2"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="@drawable/color2" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_3"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/color3"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_4"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="@drawable/color4"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_5"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/color5"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_6"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="@drawable/color6"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/color_7"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/color7"/>
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="none"
+        android:padding="24dp"
+        android:textColor="#2B2B2C"
+        android:textSize="26sp"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/title_back"
+        android:fontFamily="@font/roboto_black"
+        android:hint="Title"
+        android:inputType="none"
+        android:padding="24dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/notes_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/title_back"
+        android:fontFamily="@font/roboto"
+        android:gravity="start"
+        android:hint="Text"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/notes_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@null"
+        android:gravity="start"
+        android:padding="16dp"
+        android:textColorHint="#5F5E60"
+        android:textSize="22sp" />
+
+
+        </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/ic_baseline_save_24"
+        app:tint="@color/white" />
+
+
+
+
+</RelativeLayout>

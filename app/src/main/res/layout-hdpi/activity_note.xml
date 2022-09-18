@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/editor_background"
+    android:layout_height="match_parent"
+    android:background="#E8AA42"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".activities.NoteActivity">
+
+
+    <HorizontalScrollView
+        android:id="@+id/hor_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/background_layout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/title_back"
+            android:visibility="visible"
+            android:layout_marginTop="16dp"
+            android:padding="6dp"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_1"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/color1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_2"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/color2" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_3"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/color3"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_4"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/color4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_5"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/color5"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_6"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/color6"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color_7"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/color7"/>
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hor_scroll_view"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/title_back"
+        android:hint="Title"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="none"
+        android:padding="24dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="26sp"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/notes_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/title_back"
+        android:fontFamily="@font/roboto"
+        android:gravity="start"
+        android:hint="Text"
+        android:maxHeight="600dp"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="22sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/ic_baseline_save_24"
+        android:tintMode="@color/white" />
+
+
+
+
+</RelativeLayout>

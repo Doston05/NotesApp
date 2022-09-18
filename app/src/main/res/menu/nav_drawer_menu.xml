@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/allNotes"
+        android:checked="true"
+        android:checkable="true"
+          android:title="All Notes"
+        android:icon="@drawable/all_notes"/>
+    <item android:title="Favorite"
+          android:id="@+id/favoriteBtn"
+        android:icon="@drawable/favorite"/>
+    <item android:id="@+id/archiveBtn"
+        android:icon="@drawable/ic_baseline_archive_24"
+          android:title="Archive" />
+    <item android:id="@+id/purple"
+        android:title="Purple"
+        android:icon="@drawable/color5"/>
+    <item android:title="Green"
+        android:id="@+id/green"
+        android:icon="@drawable/color2"/>
+    <item android:id="@+id/blue"
+        android:icon="@drawable/color1"
+        android:title="Blue" />
+    <item android:id="@+id/orange"
+        android:icon="@drawable/color3"
+        android:title="Orange" />
+    <item android:id="@+id/red"
+        android:title="Red"
+        android:icon="@drawable/color6"/>
+    <item android:title="Gray"
+        android:id="@+id/dark_green"
+        android:icon="@drawable/color7"/>
+    <item android:id="@+id/teal"
+        android:icon="@drawable/color4"
+        android:title="Teal" />
+    <item android:id="@+id/settings"
+        android:title="Customize Categories"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+    <item android:id="@+id/exitBtn"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:title="Exit" />
+
+</menu>

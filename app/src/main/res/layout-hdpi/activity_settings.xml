@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF000000"
+    tools:context=".activities.SettingsActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/color1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/color111"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/color222"
+        android:drawablePadding="16dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/color1"
+        app:layout_constraintStart_toStartOf="@+id/color1"
+        app:layout_constraintTop_toBottomOf="@+id/color1"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/color3"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/color333"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/color2"
+        app:layout_constraintStart_toStartOf="@+id/color2"
+        app:layout_constraintTop_toBottomOf="@+id/color2"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/color4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/color444"
+        android:drawablePadding="16dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/color3"
+        app:layout_constraintStart_toStartOf="@+id/color3"
+        app:layout_constraintTop_toBottomOf="@+id/color3"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/color5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableStart="@drawable/color555"
+        android:drawablePadding="16dp"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/color4"
+        app:layout_constraintStart_toStartOf="@+id/color4"
+        app:layout_constraintTop_toBottomOf="@+id/color4"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/color6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/color666"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/color5"
+        app:layout_constraintStart_toStartOf="@+id/color5"
+        app:layout_constraintTop_toBottomOf="@+id/color5"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/color7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/color777"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/color6"
+        app:layout_constraintStart_toStartOf="@+id/color6"
+        app:layout_constraintTop_toBottomOf="@+id/color6"
+        tools:ignore="LabelFor"
+        android:autofillHints="" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/ic_baseline_save_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

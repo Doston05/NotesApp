@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<item
+    android:id="@+id/search"
+    android:title="search"
+    android:icon="@drawable/ic_baseline_search_24"
+    app:actionViewClass="androidx.appcompat.widget.SearchView"
+    app:showAsAction="ifRoom|collapseActionView"/>
+    <item
+        android:title="popup"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_baseline_more_vert_24">
+        <menu
+            >
+            <item android:title="sort">
+                <menu>
+                    <group>
+                        <item android:title="date"
+                            android:id="@+id/by_date"
+                            />
+                        <item android:id="@+id/by_title"
+                            android:title="Title"
+                            />
+                        <item android:id="@+id/drag_drop"
+                            android:title="drag drop"/>
+
+                    </group>
+                </menu>
+            </item>
+            <item android:title="View columns">
+                <menu>
+                    <group>
+                        <item android:title="1 column"
+                            android:id="@+id/one_column"
+                            />
+                        <item android:id="@+id/two_column"
+                            android:title="2 column"
+                            />
+                        <item android:id="@+id/three_column"
+                            android:title="3 column"
+                            />
+
+                    </group>
+                </menu>
+            </item>
+
+            <item android:title="Rate Us"
+                />
+
+        </menu>
+    </item>
+
+</menu>
